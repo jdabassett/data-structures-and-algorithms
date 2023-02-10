@@ -83,29 +83,29 @@ Within the addNumbers function, invoke the callback function as many times as ne
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
-// const addValues = (arr, value) => {
-
-//   let newArray =arr.push(value);
-//   return newArray;
-// };
+const addValues = (arr, value) => {arr.push(value);};
 
 // const addNumbers = (num, arr, times, callback) => {
 //   if (times<=0){
 //     return arr;}
 
-//   let newArr2 = callback(arr,num);
+//   callback(arr,num);
 
-//   addNumbers(num,newArr2,times-1,callback);
-
+//   return addNumbers(num,arr,times-1,callback);
 // };
 
 
 // const addValues = (arr, value) => {
 
 // };
-// const addNumbers = (num, arr, times, callback) => {
 
-// };
+
+const addNumbers = (num, arr, times, callback) => {
+  Array(times).fill().forEach(()=>{
+    callback(arr,num);
+  });
+  return arr;
+};
 
 /* ------------------------------------------------------------------------------------------------
 
@@ -148,6 +148,11 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  let returnedArray = [];
+
+  arr.forEach((value)=>((value%3===0 && value%5===0)? returnedArray.push('Fizz Buzz'):((value%3===0)? returnedArray.push('Fizz'):((value%5===0)?returnedArray.push('Buzz'):returnedArray.push(value)))));
+
+  return returnedArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -201,7 +206,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
