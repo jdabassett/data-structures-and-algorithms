@@ -290,9 +290,9 @@ Write a function named extractChildren that, given the array of characters from 
 const extractChildren = (arr) => {
   // Solution code here...
   let filteredArray = arr.filter((item)=>{return (item.name.includes('a') && item.hasOwnProperty('children'));});
-  console.log(filteredArray);
+  // console.log(filteredArray);
    let arrayFilteredChildren = filteredArray.reduce((acc,item)=>{acc.push.apply(acc,item.chilren); return acc;},[]);
-  console.log(arrayFilteredChildren);
+  // console.log(arrayFilteredChildren);
 };
 
 /* ------------------------------------------------------------------------------------------------
