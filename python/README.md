@@ -6,6 +6,9 @@
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
 
+-Class01: [Reverse List](./docs/reverse-list/README.md)
+
+
 ### Data Structure: New Implementation
 
 - Create a new folder under the `python` level, with the name of the data structure and complete your implementation there
@@ -74,3 +77,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - **Run every possible test** - `pytest`
 - **Run filtered tests** - `pytest -k some_filter_text`
 - **Run in watch mode** - `ptw` or `pytest-watch`
+
