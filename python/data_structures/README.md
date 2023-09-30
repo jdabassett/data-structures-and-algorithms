@@ -23,9 +23,5 @@ Create methods to insert, search if value exists and to return string representa
     * Time Complexity: O(n)
     * Space Complexity: O(n)
 
-#### Solution
-Example
-```python
-```
 
 
