@@ -9,15 +9,15 @@ class LinkedList():
         self.head = head_node
 
     def insert(self, val):
-        try:
+        # try:
             new_node = Node(val,None)
             new_node.next=self.head
             self.head = new_node
-        except Exception:
-            raise Exception(f"Exception: LinkedList.insert() unable to insert {val} intop linked list instance.")
+        # except Exception:
+        #     raise Exception(f"Exception: LinkedList.insert() unable to insert {val} into linked list instance.")
 
     def includes(self, val) -> bool:
-        try:
+        # try:
             curr_node = self.head
             while curr_node is not None:
                 if curr_node.value == val:
@@ -25,11 +25,11 @@ class LinkedList():
                 next_node = curr_node.next
                 curr_node = next_node
             return False
-        except Exception:
-            raise Exception(f"Exception: LinkedList.includes() unable to verify that linked list instance includes {val}")
+        # except Exception:
+        #     raise Exception(f"Exception: LinkedList.includes() unable to verify that linked list instance includes {val}")
 
     def __str__(self) -> str:
-        try:
+        # try:
             list_val = []
             curr_node = self.head
 
@@ -44,12 +44,13 @@ class LinkedList():
                 list_val.append("NULL")
 
             return " -> ".join(list_val) if len(list_val)>1 else "NULL"
-        except Exception:
-            raise Exception(f"Exception: LinkedList.to_string() unable to generate string representation of link list.")
+        # except Exception:
+        #     raise Exception(f"Exception: LinkedList._str__() unable to generate string representation of link list.")
+        #
 
 
 
 
-
-class TargetError:
+class TargetError(Exception):
     pass
+
