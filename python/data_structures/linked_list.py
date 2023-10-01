@@ -72,22 +72,30 @@ class LinkedList():
 
     def insert_before(self,target,addition):
         """When the target value matches a node's value in a linked list, a new node with an additional value will be created and inserted before the matching node."""
-        prev_node, curr_node, next_node = self.find_prev_curr_next(target)
-        if prev_node is None and curr_node is None:
-            return
-        elif prev_node is None:
-            self.insert(addition)
-        else:
-            prev_node.next = Node(addition, curr_node)
+        try:
+            prev_node, curr_node, next_node = self.find_prev_curr_next(target)
+            if prev_node is None and curr_node is None:
+                #TODO: should I keep this as is?
+                raise TargetError
+            elif prev_node is None:
+                self.insert(addition)
+            else:
+                prev_node.next = Node(addition, curr_node)
+        except:
+            raise TargetError
 
 
     def insert_after(self,target,addition):
         """When the target value matches a node's value in a linked list, a new node with an additional value will be created and inserted after the matching node."""
-        prev_node, curr_node, next_node = self.find_prev_curr_next(target)
-        if curr_node is None:
-            return
-        else:
-            curr_node.next = Node(addition, next_node)
+        try:
+            prev_node, curr_node, next_node = self.find_prev_curr_next(target)
+            if curr_node is None:
+                #TODO: should I keep this as is?
+                raise TargetError
+            else:
+                curr_node.next = Node(addition, next_node)
+        except:
+            raise TargetError
 
 
 
