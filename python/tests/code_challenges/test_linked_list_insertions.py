@@ -2,7 +2,7 @@ import pytest
 from data_structures.linked_list import LinkedList, TargetError
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_append():
     linked_list = LinkedList()
 
@@ -15,7 +15,7 @@ def test_append():
     assert str(linked_list) == "{ banana } -> { apple } -> { cucumber } -> NULL"
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_insert_before():
     linked_list = LinkedList()
 
