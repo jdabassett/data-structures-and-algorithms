@@ -97,6 +97,20 @@ class LinkedList():
         except:
             raise TargetError
 
+    def delete(self,target):
+        """When the target value matches a node's value in a linked list, this node will be deleted from list."""
+        try:
+            prev_node, curr_node, next_node = self.find_prev_curr_next(target)
+            if prev_node is None and curr_node is None:
+                #TODO: should I keep this as is?
+                raise TargetError
+            elif prev_node is None:
+                self.head = next_node
+            else:
+                prev_node.next = next_node
+        except:
+            raise TargetError
+
 
 
 class TargetError(Exception):

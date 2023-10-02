@@ -51,6 +51,41 @@ def test_insert_after():
 
     assert str(linked_list) == "{ banana } -> { cucumber } -> { apple } -> NULL"
 
+def test_delete_from_end():
+    linked_list = LinkedList()
+
+    linked_list.insert("apple")
+
+    linked_list.insert("banana")
+
+    linked_list.delete("apple")
+
+    assert str(linked_list) == "{ banana } -> NULL"
+
+def test_delete_from_beginning():
+    linked_list = LinkedList()
+
+    linked_list.insert("apple")
+
+    linked_list.insert("banana")
+
+    linked_list.delete("banana")
+
+    assert str(linked_list) == "{ apple } -> NULL"
+
+def test_delete_from_middle():
+    linked_list = LinkedList()
+
+    linked_list.insert("apple")
+
+    linked_list.insert("banana")
+
+    linked_list.insert("pear")
+
+    linked_list.delete("banana")
+
+    assert str(linked_list) == "{ pear } -> { apple } -> NULL"
+
 
 # @pytest.mark.skip("TODO")
 def test_insert_before_empty():
@@ -86,3 +121,12 @@ def test_insert_after_missing():
 
     with pytest.raises(TargetError):
         linked_list.insert_after("radish", "zucchinni")
+
+def test_delete_missing():
+    linked_list = LinkedList()
+
+    linked_list.insert("banana")
+
+    with pytest.raises(TargetError):
+        linked_list.delete('radish')
+
