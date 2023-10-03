@@ -25,7 +25,7 @@ class LinkedList():
         """Input target is compared against each node.value as linked-list is traversed. If equal is found, will ouput previous, current , and next nodes in a list."""
         prev_node = None
         curr_node = self.head
-        next_node = self.head.next
+        next_node = None if self.head is None else self.head.next
         while curr_node is not None:
             if curr_node.value == target:
                 return [prev_node, curr_node, next_node]
@@ -72,44 +72,33 @@ class LinkedList():
 
     def insert_before(self,target,addition):
         """When the target value matches a node's value in a linked list, a new node with an additional value will be created and inserted before the matching node."""
-        try:
-            prev_node, curr_node, next_node = self.find_prev_curr_next(target)
-            if prev_node is None and curr_node is None:
-                #TODO: should I keep this as is?
-                raise TargetError
-            elif prev_node is None:
-                self.insert(addition)
-            else:
-                prev_node.next = Node(addition, curr_node)
-        except:
+        prev_node, curr_node, next_node = self.find_prev_curr_next(target)
+        if prev_node is None and curr_node is None:
             raise TargetError
+        elif prev_node is None:
+            self.insert(addition)
+        else:
+            prev_node.next = Node(addition, curr_node)
 
 
     def insert_after(self,target,addition):
         """When the target value matches a node's value in a linked list, a new node with an additional value will be created and inserted after the matching node."""
-        try:
-            prev_node, curr_node, next_node = self.find_prev_curr_next(target)
-            if curr_node is None:
-                #TODO: should I keep this as is?
-                raise TargetError
-            else:
-                curr_node.next = Node(addition, next_node)
-        except:
+        prev_node, curr_node, next_node = self.find_prev_curr_next(target)
+        if curr_node is None:
             raise TargetError
+        else:
+            curr_node.next = Node(addition, next_node)
 
     def delete(self,target):
         """When the target value matches a node's value in a linked list, this node will be deleted from list."""
-        try:
-            prev_node, curr_node, next_node = self.find_prev_curr_next(target)
-            if prev_node is None and curr_node is None:
-                #TODO: should I keep this as is?
-                raise TargetError
-            elif prev_node is None:
-                self.head = next_node
-            else:
-                prev_node.next = next_node
-        except:
+        prev_node, curr_node, next_node = self.find_prev_curr_next(target)
+        if prev_node is None and curr_node is None:
             raise TargetError
+        elif prev_node is None:
+            self.head = next_node
+        else:
+            prev_node.next = next_node
+
 
 
 
