@@ -30,18 +30,24 @@ Linked-List-Insertions
 10/05/2023
 
 #### Problem
+Create methods to delete a node, insert a node at end of linked-list, insert a node before a node that matches a given value, and after the same matching node.
 
+#### Whiteboard
+![traverse-linked-list](./images/whiteboard_code-challenge-06.png)
 
 #### Approach & Efficiency
-  * LinkedList:
-    * Time Complexity:
-    * Space Complexity:
-  * LinkedList:
-    * Time Complexity:
-    * Space Complexity:
-  * LinkedList:
-    * Time Complexity:
-    * Space Complexity:
+  * LinkedList.append():
+    * Time Complexity: O(n)
+    * Space Complexity: O(1)
+  * LinkedList.insert_before():
+    * Time Complexity: O(n)
+    * Space Complexity: O(1)
+  * LinkedList.insert_after():
+    * Time Complexity: O(n)
+    * Space Complexity: O(1)
+  * LinkedList.delete():
+    * Time Complexity: O(n)
+    * Space Complexity: O(1)
 
 
 
