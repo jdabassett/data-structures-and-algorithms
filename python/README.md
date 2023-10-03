@@ -6,10 +6,10 @@
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
 
-* Class01: [Reverse List](./docs/reverse-list/README.md)
-* Class02: [List Insert Shift](./docs/list-insert-shift/README.md)
-* Class03: [List Binary Search](./docs/list-binary-search/README.md)
-* Class04: [Linked List Implementation](./data_structures/README.md)
+* [Reverse List](./docs/reverse-list/README.md)
+* [List Insert Shift](./docs/list-insert-shift/README.md)
+* [List Binary Search](./docs/list-binary-search/README.md)
+* [Data Structures](./data_structures/README.md)
 
 ### Data Structure: New Implementation
 
