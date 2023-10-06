@@ -1,3 +1,5 @@
+import pysnooper as ps
+
 
 class Node():
     """Node for a singly-linked-list"""
@@ -99,8 +101,33 @@ class LinkedList():
         else:
             prev_node.next = next_node
 
+    # @ps.snoop()
+    def kth_from_end(self,kth: int) -> Node or None:
+        """"""
+        # is input an integer
+        if not isinstance(kth,int):
+            raise TypeError("Input must be integer.")
+        # is input less than 0
+        if kth < 0:
+            raise TargetError("Input must be 0 or greater.")
 
+        dict_linked_list = {}
+        int_index = 0
+        curr = self.head
 
+        while curr is not None:
+            dict_linked_list[int_index] = curr
+            curr = curr.next
+            int_index += 1
+
+        int_kth = (int_index - 1) - kth
+
+        if int_kth < 0:
+            raise TargetError("Input falls out of range for this linked-list.")
+        elif int_kth in dict_linked_list:
+            return dict_linked_list[int_kth].value
+        else:
+            return None
 
 class TargetError(Exception):
     pass

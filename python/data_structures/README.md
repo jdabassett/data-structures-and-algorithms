@@ -50,4 +50,23 @@ Create methods to delete a node, insert a node at end of linked-list, insert a n
     * Space Complexity: O(1)
 
 
+### Title:
+Linked-List-Kth
+
+#### Date:
+10/06/2023
+
+#### Problem
+Find and return the kth from end node of the linked list.
+
+#### Whiteboard
+![linked-list-kth](./images/whiteboard_linked-list-kth.png)
+
+#### Approach & Efficiency
+  * LinkedList.kth_from_end():
+    * Time Complexity: O(n)
+    * Space Complexity: O(n)
+
+
+
 
