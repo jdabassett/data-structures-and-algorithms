@@ -10,6 +10,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 * [List Insert Shift](./docs/list-insert-shift/README.md)
 * [List Binary Search](./docs/list-binary-search/README.md)
 * [Data Structures](./data_structures/README.md)
+* [Code Challenges](./code_challenges/README.md)
 
 ### Data Structure: New Implementation
 
