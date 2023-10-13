@@ -76,7 +76,7 @@ class LinkedList():
         """When the target value matches a node's value in a linked list, a new node with an additional value will be created and inserted before the matching node."""
         prev_node, curr_node, next_node = self.find_prev_curr_next(target)
         if prev_node is None and curr_node is None:
-            raise TargetError
+            raise TargetError("Node doesn't exists in linked-list.")
         elif prev_node is None:
             self.insert(addition)
         else:
@@ -87,7 +87,7 @@ class LinkedList():
         """When the target value matches a node's value in a linked list, a new node with an additional value will be created and inserted after the matching node."""
         prev_node, curr_node, next_node = self.find_prev_curr_next(target)
         if curr_node is None:
-            raise TargetError
+            raise TargetError("Node doesn't exists in linked-list.")
         else:
             curr_node.next = Node(addition, next_node)
 
@@ -95,7 +95,7 @@ class LinkedList():
         """When the target value matches a node's value in a linked list, this node will be deleted from list."""
         prev_node, curr_node, next_node = self.find_prev_curr_next(target)
         if prev_node is None and curr_node is None:
-            raise TargetError
+            raise TargetError("Node doesn't exist om linked-list.")
         elif prev_node is None:
             self.head = next_node
         else:
@@ -103,7 +103,9 @@ class LinkedList():
 
     # @ps.snoop()
     def kth_from_end(self,kth: int) -> Node or None:
-        """"""
+        """
+        Return the value of the kth node from the end of the linked-list
+        """
         # is input an integer
         if not isinstance(kth,int):
             raise TypeError("Input must be integer.")
@@ -129,6 +131,7 @@ class LinkedList():
         else:
             return None
 
-class TargetError(Exception):
-    pass
+class TargetError(ValueError):
+    def __init__(self, message):
+        super().__init__(message)
 

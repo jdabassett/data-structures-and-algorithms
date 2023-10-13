@@ -60,7 +60,7 @@ Linked-List-Kth
 Find and return the kth from end node of the linked list.
 
 #### Whiteboard
-![linked-list-kth](./images/whiteboard_linked-list-kth.png)
+![linked-list-kth](./images/whiteboard_linked-list-kth2.png)
 
 #### Approach & Efficiency
   * LinkedList.kth_from_end():
