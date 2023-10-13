@@ -30,7 +30,7 @@ Linked-List-Insertions
 10/05/2023
 
 #### Problem
-Create methods to delete a node, insert a node at end of linked-list, insert a node before a node that matches a given value, and after the same matching node.
+Create methods to delete a node,  insert a node at end of linked-list, insert a node before a node that matches a given value, and after the same matching node.
 
 #### Whiteboard
 ![traverse-linked-list](./images/whiteboard_code-challenge-06.png)
