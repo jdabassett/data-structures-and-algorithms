@@ -68,5 +68,56 @@ Find and return the kth from end node of the linked list.
     * Space Complexity: O(n)
 
 
+## Stack
+
+### Title:
+Stack
+
+#### Date:
+10/17/2023
+
+#### Problem
+Make class to handle the creation of stack instances and their maintenance.
+
+#### Approach & Efficiency
+  * Stack.push(value):
+    * Time Complexity: O(1)
+    * Space Complexity: O(1)
+  * Stack.pop():
+    * Time Complexity: O(1)
+    * Space Complexity: O(1)
+  * Stack.peek():
+    * Time Complexity: O(1)
+    * Space Complexity: O(1)
+  * Stack.is_empty():
+    * Time Complexity: O(1)
+    * Space Complexity: O(0)
+
+## Queue
+
+### Title:
+Queue
+
+#### Date:
+10/17/2023
+
+#### Problem
+Make class to handle the creation of queue instances and their maintenance.
+
+#### Approach & Efficiency
+  * Queue.enqueue(value):
+    * Time Complexity: O(1)
+    * Space Complexity: O(1)
+  * Stack.dequeue():
+    * Time Complexity: O(n)
+    * Space Complexity: O(1)
+  * Stack.peek():
+    * Time Complexity: O(1)
+    * Space Complexity: O(1)
+  * Stack.is_empty():
+    * Time Complexity: O(1)
+    * Space Complexity: O(0)
+
+
 
 

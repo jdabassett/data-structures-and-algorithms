@@ -1,2 +1,3 @@
 class InvalidOperationError(Exception):
-    pass
+    def __init__(self, str_message):
+        super().__init__(str_message)
