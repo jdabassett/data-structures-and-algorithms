@@ -57,8 +57,10 @@ class Stack:
         input: None
         return: boolean
         """
-        if isinstance(self.top,Node):
-            return False
-        else:
-            return True
+        # if isinstance(self.top,Node):
+        #     return False
+        # else:
+        #     return True
+
+        return self.top is None
 
