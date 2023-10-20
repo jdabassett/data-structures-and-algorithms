@@ -111,3 +111,12 @@ def test_exhausted():
     actual = q.is_empty()
     expected = True
     assert actual == expected
+
+def test_is_empty2():
+    q = Queue()
+    q.enqueue("apple")
+    q.enqueue("banana")
+    q.enqueue("cucumber")
+    actual = q.is_empty()
+    expected = False
+    assert actual == expected
