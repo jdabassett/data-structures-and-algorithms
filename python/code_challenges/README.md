@@ -41,5 +41,27 @@ Create a 'PseudoQueue' class that leverages two Stack instances to implement a f
     * Time Complexity: O(n)
     * Space Complexity: O(n)
 
+## Animal Shelter Queue
+
+### Title:
+Animal Shelter Queue
+
+#### Date:
+10-22-2023
+
+#### Problem
+ Create a class that will leverage a singly-queue to enqueue and dequeue. Accommodate selecting and returning one categorical type from the queue without altering the order or remaining elements.
+
+#### Whiteboard
+![animal shelter queue](./images/whiteboard_code-challenge-12.png)
+
+#### Approach & Efficiency
+  * AnimalShelter.enqueue():
+    * Time Complexity: O(1)
+    * Space Complexity: O(1)
+  * AnimalShelter.dequeue():
+    * Time Complexity: O(n)
+    * Space Complexity: O(n)
+
 
 
