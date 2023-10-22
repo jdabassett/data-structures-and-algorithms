@@ -48,6 +48,7 @@ def test_enqueue_dequeue_enqueue_dequeue():
 
     assert actual == expected
 
+# @pytest.mark.skip()
 def test_dequeue_from_empty_queue():
     pq = PseudoQueue()
 
