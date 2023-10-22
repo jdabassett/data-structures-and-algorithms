@@ -49,6 +49,7 @@ Animal Shelter Queue
 #### Date:
 10-22-2023
 
+
 #### Problem
  Create a class that will leverage a singly-queue to enqueue and dequeue. Accommodate selecting and returning one categorical type from the queue without altering the order or remaining elements.
 
