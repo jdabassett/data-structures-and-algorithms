@@ -64,5 +64,38 @@ Animal Shelter Queue
     * Time Complexity: O(n)
     * Space Complexity: O(n)
 
+## Multi Bracket Validation
+
+### Title:
+Multi Bracket Validation
+
+#### Date:
+10-26-2023
+
+#### Problem
+  Create a function that will accept a string and return a boolean if all the brackets are properly closed.
+
+### Example
+
+```python
+# True
+multi_bracket_validation("{}()[]")
+# True
+multi_bracket_validation("{([])}")
+# False
+multi_bracket_validation("[}")
+# True
+multi_bracket_validation("()[[Extra Characters]]")
+```
+
+#### Whiteboard
+![Multi Bracket Validation](./images/whiteboard_stack-queue-brackets.png)
+
+#### Approach & Efficiency
+  * multi_bracket_validation():
+    * Time Complexity: O(n)
+    * Space Complexity: O(n)
+
+
 
 
