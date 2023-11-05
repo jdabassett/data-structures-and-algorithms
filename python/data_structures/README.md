@@ -119,5 +119,62 @@ Make class to handle the creation of queue instances and their maintenance.
     * Space Complexity: O(0)
 
 
+## Binary Tree
+
+### Title:
+Binary Tree
+
+#### Date:
+11/4/2023
+
+#### Problem
+Make a class that can create and manage a binary tree. Must have methods to traverse the tree in a 'pre','post',and 'in'-order traversal; returning a list of the trees contents.
+
+Also create a new Node class that has the attributes of 'value','left','right','count',and 'height'. These last two properties will come in handy for Binary Search Tree methods.
+
+### Whiteboard
+![binary tree whiteboard](./images/whiteboard_binary-tree.png)
+
+#### Approach & Efficiency
+  * BinaryTree.pre_order(value):
+    * Time Complexity: O(N)
+    * Space Complexity: O(N)
+  * BinaryTree.in_order(value):
+    * Time Complexity: O(N)
+    * Space Complexity: O(N)
+  * BinaryTree.post_order(value):
+    * Time Complexity: O(N)
+    * Space Complexity: O(N)
+
+## Binary Search Tree
+
+### Title:
+Binary Search Tree
+
+#### Date:
+11/4/2023
+
+#### Problem
+Make a class that can create and manage a binary search tree while inheriting from the binary tree class. Must have a method to check if value exists in tree and another method add to binary search tree while maintaining balance and allow for duplication.
+
+### Whiteboard
+
+#### Whiteboard for 'contains' method
+![binary tree whiteboard](./images/whiteboard_binary-search-tree-contains.png)
+
+#### Whiteboard for 'add' method
+![binary tree whiteboard](./images/whiteboard_binary-search-tree-contains.png)
+
+#### Approach & Efficiency
+  * BinarySearchTree.contains(value):
+    * Time Complexity: O(N)
+    * Space Complexity: O(1)
+  * BinaryTree.add():
+    * Time Complexity: O(N)
+    * Space Complexity: O(1)
+
+
+
+
 
 

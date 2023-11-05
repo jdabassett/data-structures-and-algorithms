@@ -124,7 +124,6 @@ class BinarySearchTree(BinaryTree):
             bool_left = helper(node_curr.left, val)
             bool_right = helper(node_curr.right, val)
             return bool_left or bool_right
-
         return helper(self.root, value)
 
     def print_tree(self,str_type='in'):
@@ -141,17 +140,15 @@ class BinarySearchTree(BinaryTree):
             list_return = self.post_order()
         else:
             list_return = self.in_order()
-
         print(list_return)
 
-# if __name__=="__main__":
-#     bs3 = Node(3)
-#     bst = BinarySearchTree(bs3)
-#     bst.add(10)
-#     bst.add(100)
-#     bst.add(1)
-#     bst.add(20)
-#     bst.print_tree('in')
+if __name__=="__main__":
+    bs3 = Node(3)
+    bst = BinarySearchTree(bs3)
+    bst.add(1)
+    bst.add(5)
+    bst.add(7)
+    bst.print_tree('in')
 
 
 
