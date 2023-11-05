@@ -55,6 +55,24 @@ class BinaryTree:
         helper(self.root)
         return list_return
 
+    def find_maximum_value(self)->int or float:
+        """
+        Accepts no input and returns maximum value from binary tree.
+        Assumes tree in entirely numerical.
+        """
+        if self.root is None:
+            raise TreeEmptyError()
+        num_max = -float('inf')
+        def helper(node_curr, par_max):
+            if node_curr is None:
+                return par_max
+            if node_curr.value > par_max:
+                par_max = node_curr.value
+            return max(helper(node_curr.left,par_max), helper(node_curr.right,par_max))
+        return helper(self.root, num_max)
+
+
+
 
 class Node:
     """
@@ -103,4 +121,6 @@ class Node:
             raise TypeError('Objects of different classes cannot be compared.')
 
 
-
+class TreeEmptyError(Exception):
+    def __init__(self,message="Tree is empty"):
+        super().__init__(message)
