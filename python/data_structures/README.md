@@ -160,10 +160,10 @@ Make a class that can create and manage a binary search tree while inheriting fr
 ### Whiteboard
 
 #### Whiteboard for 'contains' method
-![binary tree whiteboard](./images/whiteboard_binary-search-tree-contains.png)
+![binary search tree contains whiteboard](./images/whiteboard_binary-search-tree-contains.png)
 
 #### Whiteboard for 'add' method
-![binary tree whiteboard](./images/whiteboard_binary-search-tree-add.png)
+![binary search tree add whiteboard](./images/whiteboard_binary-search-tree-add.png)
 
 #### Approach & Efficiency
   * BinarySearchTree.contains(value):
@@ -172,6 +172,28 @@ Make a class that can create and manage a binary search tree while inheriting fr
   * BinaryTree.add():
     * Time Complexity: O(N)
     * Space Complexity: O(1)
+
+## Binary Tree method Find Maximum Value
+
+### Title:
+Find Maximum Value
+
+#### Date:
+11/5/2023
+
+#### Problem
+Write another class method to the Binary Tree class that will return the maximum value of any instance of the class. Assume that tree only contain numerical values.
+
+### Whiteboard
+
+#### Whiteboard for 'find_maximum_value' method
+![binary tree find-maximum-value whiteboard](./images/whiteboard_binary-tree-max-value.png)
+
+#### Approach & Efficiency
+  * BinaryTree.find_max_value():
+    * Time Complexity: O(N)
+    * Space Complexity: O(1)
+
 
 
 
