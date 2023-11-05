@@ -16,7 +16,7 @@ class BinaryTree:
         def helper(curr_node):
             if curr_node is None:
                 return
-            list_return.append(curr_node.val)
+            list_return.append(curr_node.value)
             helper(curr_node.left)
             helper(curr_node.right)
 
@@ -33,7 +33,7 @@ class BinaryTree:
             if curr_node is None:
                 return
             helper(curr_node.left)
-            list_return.append(curr_node.val)
+            list_return.append(curr_node.value)
             helper(curr_node.right)
 
         helper(self.root)
@@ -50,7 +50,7 @@ class BinaryTree:
                 return
             helper(curr_node.left)
             helper(curr_node.right)
-            list_return.append(curr_node.val)
+            list_return.append(curr_node.value)
 
         helper(self.root)
         return list_return
@@ -62,41 +62,45 @@ class Node:
     Attributes: Value, Left(left node), Right(right node)
     """
     def __init__(self, value=None, left=None, right=None):
-        self.val = value
+        self.value = value
         self.left = left
         self.right = right
+        self.height = 1
+        self.count = 1
 
     def __repr__(self):
-        return f"{self.val}"
+        return f"{self.value}"
 
     def __str__(self):
-        return f"{self.val}"
+        return f"{self.value}"
 
     def __lt__(self,other):
         if isinstance(other,Node):
-            if self.val <= other.val:
+            if self.value <= other.value:
                 return True
             else:
                 return False
         else:
-            # TODO: handler exception
+            raise TypeError('Objects of different classes cannot be compared.')
 
     def __gt__(self, other):
         if isinstance(other, Node):
-            if self.val >= other.val:
+            if self.value >= other.value:
                 return True
             else:
                 return False
         else:
-            # TODO: handler exception
+            raise TypeError('Objects of different classes cannot be compared.')
+
 
     def __eq__(self, other):
         if isinstance(other, Node):
-            if self.val == other.val:
+            if self.value == other.value:
                 return True
             else:
                 return False
         else:
-            # TODO: handler exception
+            raise TypeError('Objects of different classes cannot be compared.')
+
 
 

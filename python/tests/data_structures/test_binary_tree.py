@@ -27,6 +27,15 @@ def test_post_order(tree):
     expected = ["d", "e", "b", "f", "g", "c", "a"]
     assert actual == expected
 
+# @pytest.mark.skip('TODO')
+def test_node_comparison(tree):
+    assert tree.root == Node('a')
+
+# @pytest.mark.skip('TODO')
+def test_type_exception(tree):
+    with pytest.raises(TypeError):
+        tree.root == BinaryTree()
+
 
 @pytest.fixture
 def tree():
