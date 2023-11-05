@@ -56,6 +56,10 @@ class BinaryTree:
         return list_return
 
     def find_maximum_value(self)->int or float:
+        """
+        Accepts no input and returns maximum value from binary tree.
+        Assumes tree in entirely numerical.
+        """
         if self.root is None:
             raise TreeEmptyError()
         num_max = -float('inf')
