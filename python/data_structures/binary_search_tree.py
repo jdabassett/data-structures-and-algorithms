@@ -15,7 +15,10 @@ class BinarySearchTree(BinaryTree):
         Method to add new value to binary search tree.
         Citation: ChatGPT inspired
         """
+        # if isinstance(value,int) or isinstance(value,float):
         self.root = self._insert(self.root, Node(value))
+        # else:
+        #     raise ValueError('Must input float or integer to be added to binary search tree.')
 
     def _insert(self, node_curr, node_insert):
         """

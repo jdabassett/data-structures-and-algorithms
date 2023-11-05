@@ -163,7 +163,7 @@ Make a class that can create and manage a binary search tree while inheriting fr
 ![binary tree whiteboard](./images/whiteboard_binary-search-tree-contains.png)
 
 #### Whiteboard for 'add' method
-![binary tree whiteboard](./images/whiteboard_binary-search-tree-contains.png)
+![binary tree whiteboard](./images/whiteboard_binary-search-tree-add.png)
 
 #### Approach & Efficiency
   * BinarySearchTree.contains(value):
