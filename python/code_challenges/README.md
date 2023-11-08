@@ -97,5 +97,26 @@ multi_bracket_validation("()[[Extra Characters]]")
     * Space Complexity: O(n)
 
 
+## Tree Breadth First
+
+### Title:
+Tree Breadth First
+
+#### Date:
+11-8-2023
+
+#### Problem
+Write a function that accepts a tree instance and returns a list of it’s contents in the order encountered with a breadth first search.
+
+#### Whiteboard
+![tree breadth first whiteboard](./images/whiteboard_tree-breadth-first.png)
+
+#### Approach & Efficiency
+  * breadth_first(tree_param):
+    * Time Complexity: O(N)
+    * Space Complexity: O(N)
+
+
+
 
 
