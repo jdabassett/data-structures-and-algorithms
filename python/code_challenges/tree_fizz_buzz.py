@@ -1,5 +1,26 @@
-from data_structures.binary_tree import BinaryTree
+from data_structures.kary_tree import KaryTree, Node
 
 
-def fizz_buzz_tree():
-    pass
+def fizz_buzz_tree(obj_tree: KaryTree) -> KaryTree:
+    if not isinstance(obj_tree, KaryTree):
+        raise ValueError('Must input Kary-Tree into "fizz_buzz_tree" function.')
+    if hasattr(obj_tree, 'root') and obj_tree.root is None:
+        return KaryTree(None)
+
+    def helper(node_curr, node_new):
+        if node_curr is None:
+            return
+        if node_curr.value % 15 == 0:
+            node_new.value = 'FizzBuzz'
+        elif node_curr.value % 5 == 0:
+            node_new.value = "Buzz"
+        elif node_curr.value % 3 == 0:
+            node_new.value = "Fizz"
+        else:
+            node_new.value = str(node_curr.value)
+        for child in node_curr.children:
+            node_new.children.append(helper(child, Node()))
+        return node_new
+
+    node_return = helper(obj_tree.root, Node())
+    return KaryTree(node_return)

@@ -117,6 +117,27 @@ Write a function that accepts a tree instance and returns a list of it’s conte
     * Space Complexity: O(N)
 
 
+## Fizz-Buzz-Tree
+
+### Title:
+Fizz-Buzz-Tree
+
+#### Date:
+11-11-2023
+
+#### Problem
+Write a function that will accept a Kary-Tree and
+return a new Tree will the same structure only modifying the values based on the following criteria. If divisible by 15 replace with ‘FizzBuzz’, if divisible by 5 replace with ‘Buzz’, if divisible by 3 replace with ‘Fizz’ and for all else convert to string.
+
+#### Whiteboard
+![fizz-buzz-tree whiteboard](./images/whiteboard_fizz-buzz-tree.png)
+
+#### Approach & Efficiency
+  * fizz_buzz_tree(obj_tree):
+    * Time Complexity: O(N)
+    * Space Complexity: O(N)
+
+
 
 
 
