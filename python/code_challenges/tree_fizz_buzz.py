@@ -2,6 +2,9 @@ from data_structures.kary_tree import KaryTree, Node
 
 
 def fizz_buzz_tree(obj_tree: KaryTree) -> KaryTree:
+    """
+    Function to accept Kary-Tree and return new modified Kary-Tree with node values replaced with 'FizzBuzz' if divisible by 15, 'Buzz' if divisible by 5, 'Fizz' if divisible by 3, and coverted to a string if anything else.
+    """
     if not isinstance(obj_tree, KaryTree):
         raise ValueError('Must input Kary-Tree into "fizz_buzz_tree" function.')
     if hasattr(obj_tree, 'root') and obj_tree.root is None:
