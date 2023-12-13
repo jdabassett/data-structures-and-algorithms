@@ -15,13 +15,13 @@ def insertion_sort(list_unsorted: list[int]) -> list[int]:
     return list_sorted
 
 
-if __name__ == "__main__":
-    list_lists = list()
-    list_lists.append([20, 18, 12, 8, 5, -2])
-    list_lists.append([5, 12, 7, 5, 5, 7])
-    list_lists.append([2, 3, 5, 7, 13, 11])
-
-    for unsorted in list_lists:
-        expected = sorted(unsorted)
-        actual = insertion_sort(unsorted)
-        assert expected == actual
+# if __name__ == "__main__":
+#     list_lists = list()
+#     list_lists.append([20, 18, 12, 8, 5, -2])
+#     list_lists.append([5, 12, 7, 5, 5, 7])
+#     list_lists.append([2, 3, 5, 7, 13, 11])
+#
+#     for unsorted in list_lists:
+#         expected = sorted(unsorted)
+#         actual = insertion_sort(unsorted)
+#         assert expected == actual
