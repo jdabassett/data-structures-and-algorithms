@@ -194,6 +194,39 @@ Write another class method to the Binary Tree class that will return the maximum
     * Time Complexity: O(N)
     * Space Complexity: O(1)
 
+## Hashtable:
+
+### Title:
+HashTable
+
+#### Date:
+12/26/2023
+
+#### Problem
+Writing a class that can hold and manage data like a dictionary. Data is stored in a list of lists and methods include set, get, has, hash, and keys which all function like their dictionary counterparts.
+
+#### Approach & Efficiency
+  * Hashtable.get(key):
+    * Time Complexity: O(N) (Worst case if all key-values pairs are in the same bucket.)
+    * Time Complexity: O(1) (Best case if no key collisions.)
+    * Space Complexity: O(1)
+  * Hashtable.has(key):
+    * Time Complexity: O(N) (Worst case if all key-values pairs are in the same bucket.)
+    * Time Complexity: O(1) (Best case if no key collisions.)
+    * Space Complexity: O(1)
+  * Hashtable.hash(key):
+    * Time Complexity: O(1)
+    * Space Complexity: O(1)
+  * Hashtable.keys():
+    * Time Complexity: O(N) (Worse than n because it will need to check each bucket, empty or not.)
+    * Space Complexity: O(N)
+  * Hashtable.set(key, value):
+    * Time Complexity: O(N) (Worst case if all key-values pairs are in the same bucket.)
+    * Time Complexity: O(1) (Best case if no key collisions.)
+    * Space Complexity: O(1)
+
+
+
 
 
 
