@@ -28,6 +28,8 @@ def test_hash_dict(create_dict):
     expected = hash(100) % create_dict.size
     actual = create_dict.hash(100)
     assert actual == expected
+    with pytest.raises(ValueError):
+        create_dict.hash([1,2,3])
 
 
 #@pytest.mark.skip("TODO")
@@ -41,6 +43,14 @@ def test_keys_dict(create_dict):
     actual = set(create_dict.keys())
     expected = set(['silent','ahmad','apple', 'listen'])
     assert actual == expected
+
+# @pytest.mark.skip('TODO'):
+def test_collision_dict(create_dict):
+    hashtable = create_dict
+    hashtable.set(1,'test1')
+    hashtable.set(1025,'test1025')
+    assert 'test1' == hashtable.get(1)
+    assert 'test1025' == hashtable.get(1025)
 
 
 # @pytest.mark.skip("TODO")
