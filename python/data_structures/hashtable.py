@@ -75,16 +75,20 @@ class Hashtable:
 
 
 
-# if __name__ == "__main__":
-#     hashtable = Hashtable(1024)
-#     hashtable.set("apple", "Used for apple sauce")
-#     hashtable.set("ahmad", 30)
-#     hashtable.set("silent", True)
-#     hashtable.set("listen", "to me")
-#     actual = []
-#     for item in hashtable.buckets:
-#         if item:
-#             actual.append(item)
-#     expected = [("apple", "Used for apple sauce"), ("silent", True), ("listen", "to me"), ("ahmad", 30)]
-#     print(actual)
-#
+if __name__ == "__main__":
+    hashtable = Hashtable(1024)
+    # hashtable.set("apple", "Used for apple sauce")
+    # hashtable.set("ahmad", 30)
+    # hashtable.set("silent", True)
+    # hashtable.set("listen", "to me")
+    # actual = []
+    # for item in hashtable.buckets:
+    #     if item:
+    #         actual.append(item)
+    # expected = [("apple", "Used for apple sauce"), ("silent", True), ("listen", "to me"), ("ahmad", 30)]
+    # print(actual)
+    print(hashtable.hash(1))
+    print(hashtable.hash(1025))
+    hashtable.set(1,'test1')
+    hashtable.set(1025,'test1025')
+    print(hashtable)
