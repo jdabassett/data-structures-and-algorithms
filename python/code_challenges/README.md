@@ -139,6 +139,26 @@ return a new Tree will the same structure only modifying the values based on the
     * Space Complexity: O(N)
 
 
+## Hashtable Repeated Word
+
+### Title:
+Hashtable Repeated Word
+
+#### Date:
+12-27-2023
+
+#### Problem
+Write a function called repeated word that finds the first word to occur more than once in a string.
+
+#### Whiteboard
+![Hashtable Repeated Word whiteboard](./images/whiteboard_hashtable_repeated_word.png)
+
+#### Approach & Efficiency
+  * first_repeated_word(string_sentence):
+    * Time Complexity: O(N)
+    * Space Complexity: O(N)
+
+
 
 
 

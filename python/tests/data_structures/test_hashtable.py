@@ -69,6 +69,32 @@ def test_internals(create_dict):
     assert actual_values == expected_values
 
 
+# @pytest.mark.skip("TODO")
+def test_update(create_dict):
+    hashtable = create_dict
+    hashtable.update("ahmad",20)
+    assert hashtable.get("ahmad") == 50
+
+
+#@pytest.mark.skip("TODO")
+def test_update_exception(create_dict):
+    hashtable = create_dict
+    with pytest.raises(TypeError):
+        hashtable.update("ahmad", "20")
+
+
+#@pytest.mark.skip("TODO")
+def test_convert_to_list(create_dict):
+    hashtable = create_dict
+    actual = hashtable.convert_to_list()
+    expected = {"apple":"Used for apple sauce", "ahmad":30, "silent":True, "listen":"to me"}
+    for pair in actual:
+        if not pair[0] in expected:
+            assert False
+        if expected.get(pair[0]) != pair[1]:
+            assert False
+
+
 @pytest.fixture
 def create_dict():
     hashtable = Hashtable(1024)
