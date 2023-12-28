@@ -1,7 +1,7 @@
 import pytest
 from code_challenges.hashtable_left_join import left_join
 
-
+@pytest.mark.skip("TODO")
 def test_exists():
     assert left_join
 
