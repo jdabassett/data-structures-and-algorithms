@@ -159,6 +159,29 @@ Write a function called repeated word that finds the first word to occur more th
     * Space Complexity: O(N)
 
 
+## Tree Intersection
+
+### Title:
+Tree Intersection
+
+#### Date:
+12-30-2023
+
+#### Problem
+Write a function that accepts two binary trees and returns a list of values they both contain. Use the Hashtable and Binary Tree Classes declared in the ‘data_structures’ directory.
+
+#### Whiteboard
+![Tree Intersection Word whiteboard](./images/whiteboard_tree_intersection.png)
+
+#### Approach & Efficiency
+  * tree_intersection(tree0, tree1)
+    * Time Complexity: O(N)
+    * Space Complexity: O(N)
+* convert_tree_to_hashtable(values)
+    * Time Complexity: O(N)
+    * Space Complexity: O(N)
+
+
 
 
 
