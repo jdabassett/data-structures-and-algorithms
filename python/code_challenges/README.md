@@ -182,6 +182,27 @@ Write a function that accepts two binary trees and returns a list of values they
     * Space Complexity: O(N)
 
 
+## Hashmap Left Join
+
+### Title:
+Hashmap Left Join
+
+#### Date:
+1-6-2024
+
+#### Problem
+Write a function that accepts two dictionaries/hashmaps and returns the left joined product of the two.
+
+#### Whiteboard
+![Hashmap Left Join whiteboard](./images/whiteboard_hashmap-left-join.png)
+
+#### Approach & Efficiency
+  * left_join(first, second)
+    * Time Complexity: O(N)
+    * Space Complexity: O(N)
+
+
+
 
 
 
