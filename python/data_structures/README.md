@@ -5,13 +5,13 @@
 ### Title:
 Linked-List Insert, Includes, __str__
 
-#### Date: 10-01-2023
+### Date: 10-01-2023
 
-#### Problem
+### Problem
 Write classes to create Node and Linked Lists instances.
 Create methods to insert, search if value exists and to return string representation of the linked list.
 
-#### Approach & Efficiency
+### Approach & Efficiency
   * LinkedList.insert(value):
     * Time Complexity: O(1)
     * Space Complexity: O(1)
@@ -22,20 +22,20 @@ Create methods to insert, search if value exists and to return string representa
     * Time Complexity: O(n)
     * Space Complexity: O(n)
 
+___
 
-### Title:
-Linked-List-Insertions
+## Linked-List-Insertions
 
-#### Date:
+### Date:
 10/05/2023
 
-#### Problem
+### Problem
 Create methods to delete a node,  insert a node at end of linked-list, insert a node before a node that matches a given value, and after the same matching node.
 
-#### Whiteboard
+### Whiteboard
 ![traverse-linked-list](./images/whiteboard_code-challenge-06.png)
 
-#### Approach & Efficiency
+### Approach & Efficiency
   * LinkedList.append():
     * Time Complexity: O(n)
     * Space Complexity: O(1)
@@ -49,37 +49,35 @@ Create methods to delete a node,  insert a node at end of linked-list, insert a 
     * Time Complexity: O(n)
     * Space Complexity: O(1)
 
+___
 
-### Title:
-Linked-List-Kth
+## Linked-List-Kth
 
-#### Date:
+### Date:
 10/06/2023
 
-#### Problem
+### Problem
 Find and return the kth from end node of the linked list.
 
-#### Whiteboard
+### Whiteboard
 ![linked-list-kth](./images/whiteboard_linked-list-kth2.png)
 
-#### Approach & Efficiency
+### Approach & Efficiency
   * LinkedList.kth_from_end():
     * Time Complexity: O(n)
     * Space Complexity: O(n)
 
+___
 
 ## Stack
 
-### Title:
-Stack
-
-#### Date:
+### Date:
 10/17/2023
 
-#### Problem
+### Problem
 Make class to handle the creation of stack instances and their maintenance.
 
-#### Approach & Efficiency
+### Approach & Efficiency
   * Stack.push(value):
     * Time Complexity: O(1)
     * Space Complexity: O(1)
@@ -93,18 +91,17 @@ Make class to handle the creation of stack instances and their maintenance.
     * Time Complexity: O(1)
     * Space Complexity: O(0)
 
+___
+
 ## Queue
 
-### Title:
-Queue
-
-#### Date:
+### Date:
 10/17/2023
 
-#### Problem
+### Problem
 Make class to handle the creation of queue instances and their maintenance.
 
-#### Approach & Efficiency
+### Approach & Efficiency
   * Queue.enqueue(value):
     * Time Complexity: O(1)
     * Space Complexity: O(1)
@@ -118,16 +115,14 @@ Make class to handle the creation of queue instances and their maintenance.
     * Time Complexity: O(1)
     * Space Complexity: O(0)
 
+___
 
 ## Binary Tree
 
-### Title:
-Binary Tree
-
-#### Date:
+### Date:
 11/4/2023
 
-#### Problem
+### Problem
 Make a class that can create and manage a binary tree. Must have methods to traverse the tree in a 'pre','post',and 'in'-order traversal; returning a list of the trees contents.
 
 Also create a new Node class that has the attributes of 'value','left','right','count',and 'height'. These last two properties will come in handy for Binary Search Tree methods.
@@ -135,7 +130,7 @@ Also create a new Node class that has the attributes of 'value','left','right','
 ### Whiteboard
 ![binary tree whiteboard](./images/whiteboard_binary-tree.png)
 
-#### Approach & Efficiency
+### Approach & Efficiency
   * BinaryTree.pre_order(value):
     * Time Complexity: O(N)
     * Space Complexity: O(N)
@@ -146,26 +141,25 @@ Also create a new Node class that has the attributes of 'value','left','right','
     * Time Complexity: O(N)
     * Space Complexity: O(N)
 
+___
+
 ## Binary Search Tree
 
-### Title:
-Binary Search Tree
-
-#### Date:
+### Date:
 11/4/2023
 
-#### Problem
+### Problem
 Make a class that can create and manage a binary search tree while inheriting from the binary tree class. Must have a method to check if value exists in tree and another method add to binary search tree while maintaining balance and allow for duplication.
 
 ### Whiteboard
 
-#### Whiteboard for 'contains' method
+### Whiteboard for 'contains' method
 ![binary search tree contains whiteboard](./images/whiteboard_binary-search-tree-contains.png)
 
-#### Whiteboard for 'add' method
+### Whiteboard for 'add' method
 ![binary search tree add whiteboard](./images/whiteboard_binary-search-tree-add.png)
 
-#### Approach & Efficiency
+### Approach & Efficiency
   * BinarySearchTree.contains(value):
     * Time Complexity: O(N)
     * Space Complexity: O(1)
@@ -173,39 +167,37 @@ Make a class that can create and manage a binary search tree while inheriting fr
     * Time Complexity: O(N)
     * Space Complexity: O(1)
 
+___
+
 ## Binary Tree method Find Maximum Value
 
-### Title:
-Find Maximum Value
-
-#### Date:
+### Date:
 11/5/2023
 
-#### Problem
+### Problem
 Write another class method to the Binary Tree class that will return the maximum value of any instance of the class. Assume that tree only contain numerical values.
 
 ### Whiteboard
 
-#### Whiteboard for 'find_maximum_value' method
+### Whiteboard for 'find_maximum_value' method
 ![binary tree find-maximum-value whiteboard](./images/whiteboard_binary-tree-max-value.png)
 
-#### Approach & Efficiency
+### Approach & Efficiency
   * BinaryTree.find_max_value():
     * Time Complexity: O(N)
     * Space Complexity: O(1)
 
+___
+
 ## Hashtable:
 
-### Title:
-HashTable
-
-#### Date:
+### Date:
 12/26/2023
 
-#### Problem
+### Problem
 Writing a class that can hold and manage data like a dictionary. Data is stored in a list of lists and methods include set, get, has, hash, and keys which all function like their dictionary counterparts.
 
-#### Approach & Efficiency
+### Approach & Efficiency
   * Hashtable.get(key):
     * Time Complexity: O(N) (Worst case if all key-values pairs are in the same bucket.)
     * Time Complexity: O(1) (Best case if no key collisions.)
@@ -224,6 +216,24 @@ Writing a class that can hold and manage data like a dictionary. Data is stored 
     * Time Complexity: O(N) (Worst case if all key-values pairs are in the same bucket.)
     * Time Complexity: O(1) (Best case if no key collisions.)
     * Space Complexity: O(1)
+
+___
+
+## Graph: Add an Edge
+
+### Date:
+1/17/2024
+
+### Problem
+Write a method for a graph class that will accept two parameters and add an edge between them.
+
+### Whiteboard for 'add_edge' method
+![whiteboard graph add edge](./images/whiteboard_graph_add_edge.png)
+
+### Approach & Efficiency
+  * Graph.add_edge(vertex0, vertex1, 3):
+    * Time Complexity: O(1)
+    * Space Complexity: O(N)
 
 
 
