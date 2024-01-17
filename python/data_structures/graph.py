@@ -27,7 +27,7 @@ class Vertex:
         Output nothing, changes inplace.
         """
         if isinstance(vertex, Vertex) and isinstance(weight, int):
-            self.neighbors[vertex] = weight
+            self.neighbors[vertex.value] = {"neighbor": vertex, "weight": weight}
         else:
             raise TypeError("Must vertex as Vertex Instance and weight as integer.")
 
@@ -39,19 +39,26 @@ class Graph:
     def add_edge(self, value0, value1, weight=0):
         """
         """
-        if value0 not in self.graph: raise ValueError(f"{value0} not found in graph.")
-        if value1 not in self.graph: raise ValueError(f"{value1} not found in graph.")
+        if isinstance(value0, Vertex):
+            value0 = value0.value
+        if isinstance(value1, Vertex):
+            value1 = value1.value
+        if value0 not in self.graph: raise KeyError(f"{value0} not found in graph.")
+        if value1 not in self.graph: raise KeyError(f"{value1} not found in graph.")
         vertex0 = self.graph[value0]
         vertex1 = self.graph[value1]
         vertex0.add_update_neighbor(vertex1, weight)
         vertex1.add_update_neighbor(vertex0, weight)
 
-    def add_vertex(self, value):
+    def add_vertex(self, value)->Vertex:
         """"""
+        if isinstance(value, Vertex):
+            value = value.value
         if is_hashable(value):
             if value in self.graph:
                 raise ValueError(f"Vertex already exists in graph. {value}")
             self.graph[value] = Vertex(value)
+            return self.graph[value]
 
     def get_vertices(self):
         """"""
@@ -59,9 +66,11 @@ class Graph:
 
     def get_neighbors(self, value):
         """"""
+        if isinstance(value, Vertex):
+            value = value.value
         if is_hashable(value):
             if value not in self.graph:
-                raise ValueError(f"Vertex doesn't exists in graph. {value}")
+                raise KeyError(f"Vertex doesn't exists in graph. {value}")
             return self.graph[value].neighbors
 
     def size(self):
