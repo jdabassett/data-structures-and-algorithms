@@ -23,7 +23,7 @@ def test_empty():
 @pytest.mark.skip("TODO")
 def test_island_empty():
     graph = Graph()
-    lonely = graph.add_node("lonely")
+    lonely = graph.add_vertex("lonely")
     actual = graph.depth_first_search(lonely)
     expected = ["lonely"]
     assert actual == expected
@@ -31,7 +31,7 @@ def test_island_empty():
 
 @pytest.mark.skip("TODO")
 def test_island_crowded(graph):
-    lonely = graph.add_node("lonely")
+    lonely = graph.add_vertex("lonely")
     actual = graph.depth_first_search(lonely)
     expected = ["lonely"]
     assert actual == expected
@@ -39,8 +39,8 @@ def test_island_crowded(graph):
 
 @pytest.mark.skip("TODO")
 def test_mates_crowded(graph):
-    lady = graph.add_node("lady")
-    the_tramp = graph.add_node("the tramp")
+    lady = graph.add_vertex("lady")
+    the_tramp = graph.add_vertex("the tramp")
     graph.add_edge(lady, the_tramp, 10)
     graph.add_edge(the_tramp, lady, 10)
     actual = graph.depth_first_search(lady)
@@ -53,14 +53,14 @@ def graph():
 
     letters = Graph()
 
-    a = letters.add_node("a")
-    b = letters.add_node("b")
-    c = letters.add_node("c")
-    d = letters.add_node("d")
-    e = letters.add_node("e")
-    f = letters.add_node("f")
-    g = letters.add_node("g")
-    h = letters.add_node("h")
+    a = letters.add_vertex("a")
+    b = letters.add_vertex("b")
+    c = letters.add_vertex("c")
+    d = letters.add_vertex("d")
+    e = letters.add_vertex("e")
+    f = letters.add_vertex("f")
+    g = letters.add_vertex("g")
+    h = letters.add_vertex("h")
 
     letters.add_edge(a, b)
     letters.add_edge(b, c)

@@ -23,12 +23,12 @@ def graph():
 
     realms = Graph()
 
-    pandora = realms.add_node("Pandora")
-    arendelle = realms.add_node("Arendelle")
-    metroville = realms.add_node("Metroville")
-    monstropolis = realms.add_node("Monstropolis")
-    narnia = realms.add_node("Narnia")
-    naboo = realms.add_node("Naboo")
+    pandora = realms.add_vertex("Pandora")
+    arendelle = realms.add_vertex("Arendelle")
+    metroville = realms.add_vertex("Metroville")
+    monstropolis = realms.add_vertex("Monstropolis")
+    narnia = realms.add_vertex("Narnia")
+    naboo = realms.add_vertex("Naboo")
 
     realms.add_edge(pandora, arendelle)
 
