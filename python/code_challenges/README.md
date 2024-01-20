@@ -2,9 +2,6 @@
 
 ## Linked-List
 
-### Title:
-Linked-List-Zip
-
 #### Date:
 10-10-2023
 
@@ -19,10 +16,9 @@ Create a function to combine/zip two linked-lists together into one linked-list.
     * Time Complexity: O(n)
     * Space Complexity: O(1)
 
-## PseudoQueue
+___
 
-### Title:
-PseudoQueue
+## PseudoQueue
 
 #### Date:
 10-19-2023
@@ -41,14 +37,12 @@ Create a 'PseudoQueue' class that leverages two Stack instances to implement a f
     * Time Complexity: O(n)
     * Space Complexity: O(n)
 
-## Animal Shelter Queue
+___
 
-### Title:
-Animal Shelter Queue
+## Animal Shelter Queue
 
 #### Date:
 10-22-2023
-
 
 #### Problem
  Create a class that will leverage a singly-queue to enqueue and dequeue. Accommodate selecting and returning one categorical type from the queue without altering the order or remaining elements.
@@ -64,10 +58,9 @@ Animal Shelter Queue
     * Time Complexity: O(n)
     * Space Complexity: O(n)
 
-## Multi Bracket Validation
+___
 
-### Title:
-Multi Bracket Validation
+## Multi Bracket Validation
 
 #### Date:
 10-26-2023
@@ -96,11 +89,9 @@ multi_bracket_validation("()[[Extra Characters]]")
     * Time Complexity: O(n)
     * Space Complexity: O(n)
 
+___
 
 ## Tree Breadth First
-
-### Title:
-Tree Breadth First
 
 #### Date:
 11-8-2023
@@ -116,12 +107,9 @@ Write a function that accepts a tree instance and returns a list of it’s conte
     * Time Complexity: O(N)
     * Space Complexity: O(N)
 
-
+___
 
 ## Fizz-Buzz-Tree
-
-### Title:
-Fizz-Buzz-Tree
 
 #### Date:
 11-11-2023
@@ -138,11 +126,9 @@ return a new Tree will the same structure only modifying the values based on the
     * Time Complexity: O(N)
     * Space Complexity: O(N)
 
+___
 
 ## Hashtable Repeated Word
-
-### Title:
-Hashtable Repeated Word
 
 #### Date:
 12-27-2023
@@ -158,11 +144,9 @@ Write a function called repeated word that finds the first word to occur more th
     * Time Complexity: O(N)
     * Space Complexity: O(N)
 
+___
 
 ## Tree Intersection
-
-### Title:
-Tree Intersection
 
 #### Date:
 12-30-2023
@@ -181,11 +165,9 @@ Write a function that accepts two binary trees and returns a list of values they
     * Time Complexity: O(N)
     * Space Complexity: O(N)
 
+___
 
 ## Hashmap Left Join
-
-### Title:
-Hashmap Left Join
 
 #### Date:
 1-6-2024
@@ -200,6 +182,24 @@ Write a function that accepts two dictionaries/hashmaps and returns the left joi
   * left_join(first, second)
     * Time Complexity: O(N)
     * Space Complexity: O(N)
+
+___
+
+## Graphs Business Trip
+
+#### Date:
+1-19-2024
+
+#### Problem
+Write a function that accepts a Graph instance and list of string places. Returns a tuple of whether the itineary is possible and the cost.
+
+#### Whiteboard
+![whiteboard graph business trip](./images/whiteboard_graph-business-trip.png)
+
+#### Approach & Efficiency
+  * direct_flights(graph, [])
+    * Time Complexity: O(N)
+    * Space Complexity: O(1)
 
 
 

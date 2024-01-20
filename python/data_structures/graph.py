@@ -77,6 +77,11 @@ class Graph:
         """"""
         return len(self.graph)
 
+    def contains(self,value):
+        if isinstance(value, Vertex):
+            value = value.value
+        return value in self.graph
+
 
 # if __name__=="__main__":
 #     graph0 = Graph()
