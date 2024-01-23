@@ -225,7 +225,7 @@ ___
 1/17/2024
 
 ### Problem
-Write a method for a graph class that will accept two parameters and add an edge between them.
+Design a class for constructing a graph data structure. To increase its performance leverage the use of dictionaries inplace of lists wherever feasible. Define methods to manipulate the graph in the following ways: addition of vertices (add_vertex), addition of edges between vertices (add_edges), the retrieval of all neighboring vertices for a given vertex (get_neighbors), obtaining a list of all vertices within the graph (get_vertices), and determining the size of the graph (via size).
 
 ### Whiteboard for 'add_edge' method
 ![whiteboard graph add edge](./images/whiteboard_graph_add_edge.png)
@@ -234,6 +234,19 @@ Write a method for a graph class that will accept two parameters and add an edge
   * Graph.add_edge(vertex0, vertex1, 3):
     * Time Complexity: O(1)
     * Space Complexity: O(N)
+  * Graph.add_vertex():
+    * Time Complexity: O(1)
+    * Space Complexity: O(1)
+  * Graph.get_vertices():
+    * Time Complexity: O(N)
+    * Space Complexity: O(N)
+  * Graph.get_neighbors(value):
+    * Time Complexity: O(1)
+    * Space Complexity: O(1)
+  * Graph.size():
+    * Time Complexity: O(1)
+    * Space Complexity: O(1)
+
 
 
 
