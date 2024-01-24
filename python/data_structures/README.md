@@ -219,7 +219,7 @@ Writing a class that can hold and manage data like a dictionary. Data is stored 
 
 ___
 
-## Graph: Add an Edge
+## Graph
 
 ### Date:
 1/17/2024
@@ -246,6 +246,25 @@ Design a class for constructing a graph data structure. To increase its performa
   * Graph.size():
     * Time Complexity: O(1)
     * Space Complexity: O(1)
+
+___
+
+## Graph: Depth First Search
+
+### Date:
+1/23/2024
+
+### Problem
+Add a class method to the graph class that accepts a vertex instance and returns a list/collection of vertices connected directly and indirectly to that vertex. Sort the vertex values in a pre-order order from the input vertex.
+
+### Whiteboard for 'depth_first_search' method
+![whiteboard graph depth-first-search](./images/whiteboard_graph-depth-first.png)
+
+### Approach & Efficiency
+  * Graph.depth_first_search(vertex):
+    * Time Complexity: O(N) 
+    * Space Complexity: O(N)
+
 
 
 

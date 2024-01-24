@@ -60,6 +60,11 @@ class Graph:
             self.graph[value] = Vertex(value)
             return self.graph[value]
 
+    def contains(self,value):
+        if isinstance(value, Vertex):
+            value = value.value
+        return value in self.graph
+
     def get_vertices(self):
         """"""
         return [vertex for vertex in self.graph.values()]
@@ -73,24 +78,49 @@ class Graph:
                 raise KeyError(f"Vertex doesn't exists in graph. {value}")
             return self.graph[value].neighbors
 
+    def depth_first_search(self, root: Vertex) -> list:
+        if not root or not isinstance(root, Vertex):
+            raise TypeError("Root must be a vertex instance.")
+        if not self.graph or not self.contains(root):
+            return []
+        curr = self.graph.get(root.value)
+        visited = set()
+        collection = list()
+
+        def helper(node):
+            nonlocal visited
+            nonlocal collection
+            if node.value in visited:
+                return
+            collection.append(node.value)
+            visited.add(node.value)
+            neighbors = [item.get("neighbor") for item in node.neighbors.values()]
+            for neighbor in neighbors:
+                helper(neighbor)
+            return
+
+        helper(curr)
+        return collection
+
     def size(self):
         """"""
         return len(self.graph)
 
-    def contains(self,value):
-        if isinstance(value, Vertex):
-            value = value.value
-        return value in self.graph
 
 
 # if __name__=="__main__":
 #     graph0 = Graph()
-#     graph0.add_vertex("a")
-#     graph0.add_vertex("b")
-#     graph0.add_vertex("c")
+#     a = graph0.add_vertex("a")
+#     b = graph0.add_vertex("b")
+#     c = graph0.add_vertex("c")
+#     d = graph0.add_vertex("d")
 #     graph0.add_edge("a","b",1)
 #     graph0.add_edge("b", "c", 1)
 #     graph0.add_edge("c","a")
-#     print(graph0.size())
-#     print(graph0.get_neighbors("a"))
-#     print(graph0.get_vertices())
+#     graph0.add_edge("a","d", 1)
+    # print(graph0.size())
+    # print(graph0.get_neighbors("a"))
+    # print(graph0.get_vertices())
+    # print(graph0.depth_first_search(d))
+    # print(graph0.contains(a))
+    # print(a.neighbors)
